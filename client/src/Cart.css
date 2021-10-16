@@ -1,0 +1,48 @@
+/* 
+.cart{
+ display: flex;
+ padding: 100px;
+ width: 80%;
+ margin: auto;
+}
+
+.cartRecordsList {
+  margin-top: 100px;
+  overflow: scroll;
+  height: 500px;
+  border: 1 px solid black;
+}
+
+.recordItemWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+
+}
+
+.cart .right {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
+
+span {
+    margin-top: 10px
+}
+
+.cart .left {
+    flex-grow: 1;
+}
+
+.quantityButton {
+    display: flex;
+    border: 1px solid black;
+    height: 40px;
+    width: 80px;
+    justify-content: space-around;
+    margin-right: 80px;
+} */

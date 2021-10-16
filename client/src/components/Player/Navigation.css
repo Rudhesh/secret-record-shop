@@ -1,0 +1,185 @@
+.navigation {
+  margin-top: 10px;
+}
+
+.theme {
+  box-shadow: 0px 2px 2px rgb(243, 243, 243);
+  width: 100vw;
+}
+
+Nav {
+  list-style: none;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+
+/* .navigation a:hover {
+  background-color: rgb(212, 211, 211);
+  color: #000;
+  border-radius: 1px;
+  padding: 5px;
+} */
+
+div > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 0 5px;
+}
+
+div > a > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(124, 124, 124);
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+/* .icons {
+  width: 100px;
+  display: flex;
+  float: right;
+  margin-right: 90px;
+} */
+
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.navbar-nav a {
+  margin: 0 6px;
+}
+
+.btn-outline-success {
+  margin: 0 5px;
+}
+
+h3 > span {
+  background-color: #333;
+  color: white;
+  padding: 7px 11px;
+}
+
+.dropdownCart {
+  width: 400%;
+  left: -209px !important;
+}
+
+.dropdownProfile {
+  width: 0;
+  left: -107px !important;
+}
+
+.dropdown {
+  margin: 0 10px !important;
+}
+
+.cartCount {
+  background-color: rgb(221, 0, 0);
+  color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 2px;
+}
+
+.favoriteCount {
+  background-color: rgb(221, 0, 0);
+  color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 90px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 2px;
+}
+
+.navbar-expand {
+  flex-wrap: wrap !important;
+}
+
+.burgerMenu {
+  display: flex;
+}
+
+.mainNavbar {
+  display: flex;
+}
+
+element.style {
+  width: 70%;
+  margin: 5px 0px !important;
+}
+
+@media (max-width: 771px) {
+  .search {
+    display: none !important;
+  }
+
+  .burgerMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  .mainNavbar {
+    display: block;
+    margin-left: 50px;
+  }
+
+  .dropdownProfile {
+    width: 0;
+    left: 0 !important;
+  }
+
+  .dropdown {
+    margin: 0px !important;
+  }
+
+  .icons {
+    /* display: none !important; */
+    /* display: flex !important; */
+  }
+
+  /* .smallNav {
+    display: flex !important;
+    background-color: aquamarine !important;
+  } */
+
+  .navContainer {
+    display: flex !important;
+  }
+
+  .favoriteCount {
+    background-color: rgb(221, 0, 0);
+    color: aliceblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 130px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 2px;
+  }
+}

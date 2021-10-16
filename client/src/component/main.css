@@ -1,0 +1,9 @@
+.Main {
+  display: flex;
+  /* width: 100vw; */
+  height: 87vh;
+  justify-content: center;
+  align-items: center;
+
+  /* background: #f0f2f5; */
+}

@@ -1,0 +1,163 @@
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b3afb3;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b3afb3;
+}
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
+
+/* .imageRecordDark {
+    width: 279px;
+    height: 279px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: rgba(8, 7, 7, 0.589);
+} */
+
+.artist {
+  font-family: "Acme", sans-serif;
+  margin-bottom: initial;
+  color: black;
+}
+
+.artist {
+  font-family: "Acme", sans-serif;
+  margin-bottom: initial;
+  color: black;
+}
+
+.titleRecord {
+  font-family: "Karla", sans-serif;
+  color: black;
+}
+
+.formatPrice {
+  font-family: "Actor", sans-serif;
+  color: #65635f;
+}
+
+.navBarText {
+  font-family: "Karla", sans-serif;
+}
+
+.addToCart {
+  background-color: white;
+  font-family: "Actor", sans-serif;
+  padding: 5px 15px;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.removeFromCart {
+  background-color: white;
+  color: violet;
+  font-family: "Actor", sans-serif;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.btnPlayer {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: rgba(8, 7, 7, 0.589);
+  border-radius: 50px;
+}
+
+.contact p {
+  color: black;
+}
+.contact {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+
+.leaflet-container {
+  min-height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 
+.contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 200px;
+  height: 80vh;
+}
+
+.contact div {
+  margin: auto;
+  padding-top: 15px;
+}
+
+.contact h1 {
+  font-family: "Acme", sans-serif;
+  font-size: 3em;
+}
+
+.contact h3 {
+  font-family: "Acme", sans-serif;
+}
+
+.contact p {
+  font-family: "Karla", sans-serif;
+  margin-bottom: 0px;
+}
+.contact a {
+  font-family: "Karla", sans-serif;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.favorite {
+  float: right;
+}
+
+ */
+.contactDetails {
+  width: 500px;
+  text-align: center;
+
+  padding: 50px;
+  box-shadow: 1px 1px 5px rgb(200, 200, 200);
+  background-color: white;
+  border-radius: 3px;
+}
+
+@media (max-width: 771px) {
+  .btnPlayer {
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 89px;
+    left: 83px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: rgba(8, 7, 7, 0.589);
+    border-radius: 50px;
+  }
+}
