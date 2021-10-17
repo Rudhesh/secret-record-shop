@@ -162,7 +162,7 @@ if (process.env.NODE_ENV == "production") {
   });
 }
 
-const PORT = process.env.PORT || 9002;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.info(`App listening on http://localhost:${PORT}`);
