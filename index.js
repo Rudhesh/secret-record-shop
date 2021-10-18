@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import { fileURLToPath } from "url";
+import path, { dirname } from "path";
 import mongoose from "mongoose";
 import Playlist from "./models/playlist.js";
 import User from "./models/user.js";
@@ -7,16 +9,18 @@ import dotenv from "dotenv";
 import { validationResult } from "express-validator";
 import userValidators from "./validators/userValidators.js";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 const app = express();
 app.use(express.json());
+
+app.use(express.static(path.join(__dirname, "client/build")));
+
 // app.use(express.urlencoded());
 app.use(cors());
 
-const dotenvResult = dotenv.config({ path: "./.env" });
-if (dotenvResult.error) {
-  console.log("ERROR when loading .env", dotenvResult.error);
-  process.exit(1);
-}
+dotenv.config();
 
 mongoose.connect(
   `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@localhost:${process.env.DB_PORT}/${process.env.DB_HOST}`,
@@ -154,13 +158,13 @@ app.use((err, req, res, next) => {
   }
 });
 
-if (process.env.NODE_ENV == "production") {
-  app.use(express.static("client/build"));
-  const path = require("path");
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  });
-}
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, "client/build")));
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+});
 
 const PORT = process.env.PORT || 5000;
 
