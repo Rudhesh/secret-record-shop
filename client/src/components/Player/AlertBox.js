@@ -14,12 +14,12 @@ const AlertBox = () => {
   }
   return (
     <div>
-      <div id="popup1" class="overlay">
-        <div class="popup">
+      <div id="popup1" className="overlay">
+        <div className="popup">
           <h2>Invalid !!!!</h2>
 
-          <div class="content-1">Details did not match!!</div>
-          <div class="content-2"></div>
+          <div className="content-1">Details did not match!!</div>
+          <div className="content-2"></div>
           <Button id="play-again" onClick={playAgain}>
             Try again
           </Button>

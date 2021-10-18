@@ -42,7 +42,7 @@ const MainLogin = ({ setLoginUser1 }) => {
   };
 
   const login1 = () => {
-    axios.post("http://localhost:9002/mainlogin", user).then((res) => {
+    axios.post("/mainlogin", user).then((res) => {
       alert(res.data.message);
 
       setLoginUser1(res.data.user);

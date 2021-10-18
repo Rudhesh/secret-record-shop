@@ -5,7 +5,7 @@ export const cartReducer = (state, action) => {
     case "ADD_TO_CART":
       return { ...state, cart: [...state.cart, { ...action.payload, qty: 1 }] };
     case "FAVORITE":
-      axios.post("http://localhost:9002/main", action.payload).then((res) => {
+      axios.post("/main", action.payload).then((res) => {
         // console.log(res.data);
         alert(res.data.message);
       });

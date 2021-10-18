@@ -24,7 +24,7 @@ const MainSignup = () => {
     const { name, email, password, reEnterPassword } = login;
     if (name && email && password && password === reEnterPassword) {
       axios
-        .post("http://localhost:9002/mainsignup", login)
+        .post("/mainsignup", login)
         .then((res) => {
           alert(res.data.message);
           history.push("/mainlogin");

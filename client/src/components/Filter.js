@@ -22,7 +22,7 @@ const Filter = () => {
   return (
     <div className="filter">
       <>
-        <Button variant="outline dark" onClick={handleShow}>
+        <Button onClick={handleShow}>
           <FontAwesomeIcon icon={faBars} />{" "}
         </Button>
 

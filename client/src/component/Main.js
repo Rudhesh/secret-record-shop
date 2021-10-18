@@ -25,17 +25,15 @@ const Main = () => {
   console.log("Product length :", products.length);
   function getProducts() {
     console.log("getProducts");
-    axios
-      .get("http://localhost:9002/main", { params: { answer: user1._id } })
-      .then((res) => {
-        // alert(res.data.message);
-        console.log("user Status: ", user1);
-        setProducts(res.data);
-      });
+    axios.get("/main", { params: { answer: user1._id } }).then((res) => {
+      // alert(res.data.message);
+      console.log("user Status: ", user1);
+      setProducts(res.data);
+    });
   }
 
   function deleteProduct(product) {
-    const url = "http://localhost:9002/main/" + product._id;
+    const url = "/main/" + product._id;
     const config = {
       method: "DELETE",
     };

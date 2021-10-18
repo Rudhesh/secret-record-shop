@@ -6,17 +6,6 @@ const ShoppingCart = React.createContext();
 export const Context = ({ children }) => {
   const songs = [
     {
-      id: 1,
-      title: "Alive",
-      artist: "Neoni, N3WPORT",
-      img_src: "/images/alive.jpg",
-      format: "Vinyl  LP",
-      genre: "Hip hop",
-      price: 29.99,
-      type: "electronic",
-      src: "./music/N3WPORT - Alive (feat. Neoni) [NCS Release].mp3",
-    },
-    {
       id: 2,
       title: "Forget me too ft. Halsey",
       artist: "Machine Gun Kelly",
@@ -27,6 +16,7 @@ export const Context = ({ children }) => {
       price: 44,
       genre: "Hip Hop",
     },
+
     {
       id: 3,
       title: "somebody-new",

@@ -9,7 +9,7 @@ import userValidators from "./validators/userValidators.js";
 
 const app = express();
 app.use(express.json());
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
 app.use(cors());
 
 const dotenvResult = dotenv.config({ path: "./.env" });

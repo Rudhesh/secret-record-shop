@@ -40,7 +40,7 @@ const Music = ({ url }) => {
 
   return (
     <div>
-      <button type="button" class="btnPlayer" onClick={toggle}>
+      <button type="button" className="btnPlayer" onClick={toggle}>
         {playing ? (
           <FontAwesomeIcon icon={faPause} />
         ) : (
