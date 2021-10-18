@@ -22,13 +22,27 @@ app.use(cors());
 
 dotenv.config();
 
-mongoose.connect(
-  `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@localhost:${process.env.DB_PORT}/${process.env.DB_HOST}`,
+// const db =
+//   "mongodb+srv://data:anina123@cluster0.g7u5d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    // useCreatIndex: true,
+    // useUnifiedTopology: true,
+    // useFindAndModify: false,
+  })
+  .then(() => {
+    console.log("connection successful");
+  })
+  .catch((err) => console.log("no connection", err));
 
-  () => {
-    console.log("mongoDB is connected");
-  }
-);
+// mongoose.connect(
+//   `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@localhost:${process.env.DB_PORT}/${process.env.DB_HOST}`,
+
+//   () => {
+//     console.log("mongoDB is connected");
+//   }
+// );
 
 //Route
 // await User.deleteMany({});
